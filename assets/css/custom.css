@@ -13,3 +13,8 @@
         display: inline-block;
         max-width: 100%;
     }
+
+.emph {
+    font-size:larger; 
+    color:#2e4f02
+}
