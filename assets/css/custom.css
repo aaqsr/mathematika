@@ -1,0 +1,15 @@
+.img-noFill {
+    width: initial !important;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center
+}
+
+    .img-noFill img {
+        min-height: initial !important;
+        min-width: initial !important;
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+    }
