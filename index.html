@@ -212,7 +212,8 @@
                         </div>
                         <div class="features-content">
                             <h4>Talks</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
+                            <p>Take a peek at mysteries that have befuddled the greatest minds for centuries and still lurk in mathematics. Could you be the one to solve them? </p>
+                            <!--in the future this will lead to another page-->
                             <a href="#" class="text-button-icon">
                                 Learn More <i class="fa fa-arrow-right"></i>
                             </a>
@@ -226,7 +227,7 @@
                         </div>
                         <div class="features-content">
                             <h4>Lectures</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
+                            <p>Learn about powerful yet suprisingly non-complex topics, banished from the standard syllabus, that mathematicians use everyday...</p>
                             <a href="#" class="text-button-icon">
                                 Learn More <i class="fa fa-arrow-right"></i>
                             </a>
@@ -240,7 +241,7 @@
                         </div>
                         <div class="features-content">
                             <h4>Competitions</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
+                            <p>Can you gather your friends and prove that your problem-solving and logic skills are matchless, even with the threat of elimination lurking around every corner?</p>
                             <a href="#" class="text-button-icon">
                                 Learn More <i class="fa fa-arrow-right"></i>
                             </a>
@@ -258,11 +259,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="section-heading">
-                        <h6>Subscribe Newsletters</h6>
-                        <h2>Don’t miss this chance!</h2>
+                        <h6>Register Now</h6>
+                        <h2>And we'll see you there</h2>
                     </div>
                     <div class="subscribe-content">
-                        <p>Vivamus suscipit blandit nibh, in cursus mi. Proin vel blandit metus, et auctor elit. Vivamus tincidunt tristique convallis. Ut nec odio vel arcu euismod semper nec ac sem.</p>
+                        <p class="d-flex justify-content-between">Come join us on our voyage through the peculiar and mystifying waters of Mathematics.<br />
+                        See what it is that made Einstein say: 
+                        <h5 id="quote" class="typewriter" >"Pure mathematics is, in its way, poetry"</h5> </p>
                         <div class="subscribe-form">
                             <form id="subscribe-now" action="" method="get">
                                 <div class="row">
@@ -611,6 +614,25 @@
         });
 
     </script>
+
+    <!--Custom scripts-->
+
+    <script>
+        $(document).ready(function () {
+            var in_view = new Waypoint.Inview({
+                element: $('#quote')[0],
+                enter: function () {
+                    $('#quote').addClass('start');
+                },
+                exit: function () {  // optionally
+                    $('#quote').removeClass('start');
+                }
+            });
+        });
+    </script>
+
+
+    <!--<script src="assets/ks/animation.js"></script>-->
 
     </body>
 </html>
