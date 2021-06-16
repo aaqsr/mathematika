@@ -1,7 +1,9 @@
-let typer = new TypeIt("#typedQuotes", {
+// for the subscribe wala quote scroller
+
+let quoteTyper = new TypeIt("#typedQuotes", {
     html: true,
     speed:  80,
-    loop: false,
+    loop: true,
     loopDelay: 4000,
     cursorChar: '<span style="color: lime">|</span>',
     waitUntilVisible: true,
@@ -20,8 +22,21 @@ var content = [
 var p = 1500;
 
 for(const str of content) {
-  typer.type(str).pause(p).delete(0 - str.length);
+  quoteTyper
+        .type(str)
+        .pause(p)
+        .delete(0 - str.length);
 }
 
-typer.go();
+quoteTyper.go();
 
+
+// for the about us quote
+
+new TypeIt("#aboutUsQuote", {
+    strings: '"Would you teach an artist <span class="emph">how to paint</span> without letting them <span class="emph">pick up the brush?</span>"',
+    html: true,
+    speed:  80,
+    cursorChar: '<span style="color: lime">|</span>',
+    waitUntilVisible: true,
+}).go();
