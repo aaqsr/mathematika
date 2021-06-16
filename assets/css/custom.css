@@ -24,12 +24,11 @@
 }
 
 
-#quote {
+.quote {
     border-right: solid 3px rgba(0,255,0,.75);
     white-space: nowrap;
     overflow: hidden;
     color: white;
-    margin: 0 auto;
 }
 
 /* Animation */

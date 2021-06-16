@@ -265,7 +265,11 @@
                     <div class="subscribe-content">
                         <p class="d-flex justify-content-between">Come join us on our voyage through the peculiar and mystifying waters of Mathematics.<br />
                         See what it is that made Einstein say: 
-                        <h5 id="quote" class="typewriter" >"Pure mathematics is, in its way, poetry"</h5> </p>
+                        <div id="typed-strings">
+                            <h4>"Pure mathematics is, in its way, poetry"</h4>
+                        </div >
+                        <span style="color: white" id="typed"></span>
+                        </p>
                         <div class="subscribe-form">
                             <form id="subscribe-now" action="" method="get">
                                 <div class="row">
@@ -615,24 +619,13 @@
 
     </script>
 
-    <!--Custom scripts-->
-
+    <!--for text animations-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        $(document).ready(function () {
-            var in_view = new Waypoint.Inview({
-                element: $('#quote')[0],
-                enter: function () {
-                    $('#quote').addClass('start');
-                },
-                exit: function () {  // optionally
-                    $('#quote').removeClass('start');
-                }
-            });
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings'
         });
     </script>
-
-
-    <!--<script src="assets/ks/animation.js"></script>-->
 
     </body>
 </html>
