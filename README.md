@@ -19,3 +19,12 @@ Lots of work needed
 - [ ] make a template page for content pages that we might need
 - [ ] add more content
 - [x] update the todo list
+- [ ] SEO
+- [ ] nav-bar / header
+- [ ] the slideshow at the top of the page
+- [ ] CLEAN UP CODE PLEASE
+- [ ] `<form id="subscribe-now" action="" target="_blank"> <!-- Include the google form link here -->`
+
+## Links
+
+- [SEO](https://developers.google.com/search/docs/beginner/seo-starter-guide)
