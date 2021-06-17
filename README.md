@@ -24,6 +24,7 @@ Lots of work needed
 - [ ] the slideshow at the top of the page
 - [ ] CLEAN UP CODE PLEASE
 - [ ] `<form id="subscribe-now" action="" target="_blank"> <!-- Include the google form link here -->`
+- [ ] Blue re-theme
 
 ## Links
 
