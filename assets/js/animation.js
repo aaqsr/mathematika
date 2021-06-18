@@ -50,11 +50,10 @@ new TypeIt('#subtitleOfTitle', {
     cursorChar: '<span style="color: lime">|</span>',
     waitUntilVisible: true,
 })
-    .type("'I'm not good at maths, I can't join' is one of the <span class=\"emph2\">greatest misconceptions</span> about mathematika.<br />Anyone can join the society.")
+    .type("'I'm not good at maths, I can't join' is one of the <span class=\"emph2\">greatest misconceptions</span> about mathematika.<br />Anyone can join.")
     .pause(700)
-    .move(-13)
-    .delete(-15)
+    .delete(-16)
     .pause(500)
-    .type("<span class=\"emph2\">Anyone can join</span>")
-    .move(15)
+    .type("<span class=\"emph2\" style=\"text-decoration:underline\">Anyone can join.</span>")
+    .move(16)
     .go();
