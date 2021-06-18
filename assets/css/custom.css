@@ -26,3 +26,8 @@
 .green-text {
     color: #5FB759;
 }
+
+footer a:any-link {
+    color: antiquewhite;
+    font-style: italic;
+}
