@@ -10,7 +10,8 @@ Just an advertising website.
 ## To-Do list
 Lots of work needed
 
-- [ ] get custom domain
+- [ ] put CCA fair in slideshow on the top
+- [x] get custom domain
 - [ ] rename IDs of page sections and divs and clean up the codebase (once content is done)
 - [ ] get the image gallery working
 - [ ] get actual pictures
