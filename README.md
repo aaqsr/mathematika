@@ -31,3 +31,4 @@ Lots of work needed
 
 - [SEO](https://developers.google.com/search/docs/beginner/seo-starter-guide)
 - [Colour Picker](https://www.colorzilla.com/gradient-editor/)
+- [fav icon maker](https://favicon.io/favicon-converter/)
