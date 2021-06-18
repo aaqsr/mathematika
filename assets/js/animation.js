@@ -34,9 +34,27 @@ quoteTyper.go();
 // for the about us quote
 
 new TypeIt("#aboutUsQuote", {
-    strings: '"Would you teach an artist <span class="emph">how to paint</span> without letting them <span class="emph">pick up the brush?</span>"',
     html: true,
-    speed:  80,
+    strings: '"Would you teach an artist <span class="emph">how to paint</span> without letting them <span class="emph">pick up the brush?</span>"',
+    speed: 80,
     cursorChar: '<span style="color: lime">|</span>',
     waitUntilVisible: true,
 }).go();
+
+    
+// for the subtile of title quote
+
+new TypeIt('#subtitleOfTitle', {
+    html: true,
+    speed: 50,
+    cursorChar: '<span style="color: lime">|</span>',
+    waitUntilVisible: true,
+})
+    .type("'I'm not good at maths, I can't join' is one of the <span class=\"emph2\">greatest misconceptions</span> about mathematika.<br />Anyone can join the society.")
+    .pause(700)
+    .move(-13)
+    .delete(-15)
+    .pause(500)
+    .type("<span class=\"emph2\">Anyone can join</span>")
+    .move(15)
+    .go();
