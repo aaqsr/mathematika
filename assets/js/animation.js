@@ -2,9 +2,9 @@
 
 let quoteTyper = new TypeIt("#typedQuotes", {
     html: true,
-    speed:  80,
+    speed: 40,
     loop: true,
-    loopDelay: 4000,
+    loopDelay: 1000,
     cursorChar: '<span style="color: lime">|</span>',
     waitUntilVisible: true,
 })
@@ -19,13 +19,14 @@ var content = [
     '"It is impossible to be a mathematician without being a poet in soul." ~Sofia Kovalevskaya"',
 ];
 
-var p = 1500;
+var p = 3000;
 
-for(const str of content) {
-  quoteTyper
+for (const str of content) {
+    quoteTyper
         .type(str)
         .pause(p)
-        .delete(0 - str.length);
+        .delete(0 - str.length)
+        .pause(100);
 }
 
 quoteTyper.go();
@@ -36,20 +37,20 @@ quoteTyper.go();
 new TypeIt("#aboutUsQuote", {
     html: true,
     strings: '"Would you teach an artist <span class="emph">how to paint</span> without letting them <span class="emph">pick up the brush?</span>"',
-    speed: 80,
+    speed: 50,
     cursorChar: '<span style="color: lime">|</span>',
     waitUntilVisible: true,
 }).go();
 
-    
+
 // for the subtile of title quote
 
 new TypeIt('#subtitleOfTitle', {
-    html: true,
-    speed: 50,
-    cursorChar: '<span style="color: lime">|</span>',
-    waitUntilVisible: true,
-})
+        html: true,
+        speed: 50,
+        cursorChar: '<span style="color: lime">|</span>',
+        waitUntilVisible: true,
+    })
     .type("'I'm not good at maths, I can't join' is one of the <span class=\"emph2\">greatest misconceptions</span> about mathematika.<br />Anyone can join.")
     .pause(700)
     .delete(-16)
