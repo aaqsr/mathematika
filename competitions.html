@@ -151,11 +151,12 @@
                     <div class="right-text-content timeline-container" id="about-body" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s" >
 
                         <ul class="timeline" style="margin-right: 0px !important">
-                            <li class="event" data-date="12:30 - 1:00pm">
-                                <h3>Registration</h3>
-                                <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                            <li class="event" data-date="">
+                                <h3>Will be released soon</h3>
+                                <p>Details will be available soon. Check back again later!</p>
+                                <p id="quote2"></p>
                             </li>
-                            <li class="event" data-date="2:30 - 4:00pm">
+                            <!--<li class="event" data-date="2:30 - 4:00pm">
                                 <h3>Opening Ceremony</h3>
                                 <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
                             </li>
@@ -165,7 +166,7 @@
                             </li>
                             <li class="event" data-date="8:30 - 9:30pm">
                                 <h3>Closing Ceremony</h3>
-                                <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>
+                                <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>-->
                             </li>
                         </ul>
                     </div>
@@ -243,6 +244,23 @@
                 cursorChar: '<span style="color: lime">|</span>',
                 waitUntilVisible: true,
             }).go();
+
+            new TypeIt("#quote2", {
+                html: true,
+                speed: 50,
+                cursorChar: '<span style="color: lime">|</span>',
+                waitUntilVisible: true,
+            })
+                .pause(800)
+                .type("We're workng on it.")
+                .pause(1000)
+                .move(-9)
+                .type("i")
+                .move(9)
+                .pause(1500)
+                .type('<br /><em style="font-size:medium">(I think)</em>')
+                .move(1)
+                .go();
     </script>
 
 
