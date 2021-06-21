@@ -26,6 +26,7 @@ Lots of work needed
 - [ ] CLEAN UP CODE PLEASE
 - [ ] `<form id="subscribe-now" action="" target="_blank"> <!-- Include the google form link here -->`
 - [ ] Blue re-theme
+- [ ] Dark theme option
 
 ## Links
 
