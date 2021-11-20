@@ -67,4 +67,4 @@ new TypeIt('#piDigits', {
     speed: 50,
     cursorChar: '<span style="color: lime">|</span>',
     waitUntilVisible: true,
-})
+}).go();
