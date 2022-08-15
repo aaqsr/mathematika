@@ -1,9 +1,4 @@
-# (WIP)
-# The mathematika society
-
-Simple static website made very fast with bootstrap and copied mostly from a template for the lyceum maths society. 
-No fancy javascript frameworks, no fancy features. 
-Just an advertising website.
+# The Lyceum Mathematika Society!
 
 ### Developed with git, hosted with github.
 
